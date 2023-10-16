@@ -1,0 +1,61 @@
+﻿Coordinate Validation:
+1. Valid Input - Single Coordinate
+• Description: Pass a single coordinate as input to the API endpoint.
+• Expected Result: Verify that the API returns a list of rectangles that the coordinate falls into.
+2. Valid Input - Multiple Coordinates
+• Description: Pass an array of multiple coordinates as input to the API endpoint.
+• Expected Result: Verify that the API returns a list of rectangles for each coordinate that falls into them.
+3. Invalid Input - Empty Coordinate Array
+• Description: Pass an empty array of coordinates as input to the API endpoint.
+• Expected Result: Verify that the API returns an appropriate error response indicating that the input is invalid.
+4. Invalid Input - Invalid Coordinate Format
+• Description: Pass an array of coordinates with an invalid format (e.g., non-numeric values, missing values) as input to the API endpoint.
+• Expected Result: Verify that the API returns an appropriate error response indicating that the input format is invalid.
+5. Boundary Test - Coordinate on Rectangle Edge
+• Description: Pass a coordinate that lies exactly on the edge of a rectangle as input to the API endpoint.
+• Expected Result: Verify that the API returns the rectangle that the coordinate falls into.
+6. Boundary Test - Coordinate Outside all Rectangles
+• Description: Pass a coordinate that does not fall into any defined rectangles as input to the API endpoint.
+• Expected Result: Verify that the API returns an empty list since there are no rectangles that the coordinate falls into.
+7. Performance Test - Large Number of Coordinates
+• Description: Pass a large array of coordinates as input to the API endpoint.
+• Expected Result: Measure the response time of the API and ensure it performs well with a large number of coordinates.
+Data Seeding Requirements:
+8. Data Seeding Success
+• Description: Verify that data seeding methods correctly populate the database with rectangle data entries.
+• Expected Outcome: The database contains the expected number of rectangles with defined coordinates and dimensions.
+9. Data Entry Definitions
+• Description: Ensure that each data entry defines rectangle coordinates and dimensions according to the chosen design.
+• Expected Outcome: Data entries accurately define rectangle coordinates and dimensions.
+API Endpoint Validation:
+10. Endpoint Availability
+• Description: Verify that the API defines an endpoint that accepts an array of coordinates as input.
+• Expected Outcome: The API successfully accepts the array of coordinates.
+11. Input Object Format
+• Description: Ensure that the input object design is compatible with the expected format.
+• Expected Outcome: The input object format aligns with the API's documentation, and the API processes it accurately.
+Coordinate Matching:
+12. Multiple Rectangles
+• Description: Test with coordinates that fall within multiple rectangles.
+• Expected Outcome: The API correctly returns all intersecting rectangles for each coordinate.
+13. Single Rectangle
+• Description: Test with coordinates that fall within a single rectangle.
+• Expected Outcome: The API returns the expected single rectangle for each coordinate.
+14. No Matching Rectangles
+• Description: Test with coordinates that do not match any rectangle.
+• Expected Outcome: The API returns an empty list for coordinates that do not match any rectangles.
+15. Coordinate Formats
+• Description: Test with various coordinate formats (e.g., integers, floats, negative values).
+• Expected Outcome: The API handles different coordinate formats correctly.
+Boundary Testing:
+16. Edges of Rectangles
+• Description: Test with coordinates that are on the edges of rectangles.
+• Expected Outcome: The API correctly includes edge coordinates in matching rectangles.
+17. Outside Rectangles
+• Description: Test with coordinates that are outside the boundaries of rectangles.
+• Expected Outcome: The API correctly identifies that these coordinates do not match any rectangles.
+Performance Testing:
+18. Performance with Large Array
+• Description: Test the API's performance with a large array of coordinates.
+• Expected Outcome: The API responds within acceptable time limits and handles the load effectively.
+

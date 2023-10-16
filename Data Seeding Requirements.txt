@@ -1,0 +1,25 @@
+﻿Data Seeding Requirements:
+Data Types and Fields:
+• Define the data structure that represents a rectangle, including the following fields:
+• Rectangle ID (unique identifier)
+• X-coordinate of the top-left corner
+• Y-coordinate of the top-left corner
+• Width of the rectangle
+• Height of the rectangle
+Data Entry Design:
+• Specify the design of the data entries that will be inserted into the database. Each entry should represent a rectangle and must include values for the fields mentioned above.
+Data Entry Validity:
+• Ensure that the data entries are valid and represent rectangles that don't overlap or contain anomalies. Perform checks to ensure that the rectangles do not intersect each other or violate any predefined rules.
+Data Quantity:
+• Determine the number of data entries to be seeded in the database. This should align with the expected size of the database and the number of test cases that require data.
+Data Diversity:
+• Create a diverse set of rectangles that cover various scenarios, such as rectangles with different sizes, positions, and edge cases. Ensure that the data set includes both simple and complex rectangles. This will help in testing different scenarios and edge cases.
+Data Format:
+• Define the format for providing the data to the development team. This can include specifying a file format (e.g., CSV, JSON) or the structure of SQL insert statements. Provide clear instructions and examples on how to format the data.
+Data Seeding Methods:
+• Define the methods that the development team should use to insert the data into the database. These methods should be well-documented and easy to execute. Provide step-by-step instructions and scripts if necessary.
+Data Integrity:
+• Ensure data integrity by validating that the seeded data accurately represents the specified rectangles and that there are no inconsistencies in the data set. Perform data validation checks to ensure that the seeded data meets the defined criteria and rules.
+Testing Environment:
+• Specify the environment in which the data seeding should take place, such as a development or testing database. Make sure that the environment is prepared for data seeding by ensuring that the necessary infrastructure and resources are available.
+
